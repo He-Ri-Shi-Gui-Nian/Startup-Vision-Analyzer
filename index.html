@@ -471,7 +471,7 @@
       const prompt = buildPrompt(role, history);
 
       try {
-        const res = await fetch("https://startup-vision-analyzer-backend.onrender.com", {
+        const res = await fetch("https://startup-vision-analyzer-backend.onrender.com/gemini", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ prompt })
